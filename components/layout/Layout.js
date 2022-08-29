@@ -1,11 +1,11 @@
 import React from "react";
 import Header from "./Header";
 
-const Layout = () => {
+const Layout = ({ childrend }) => {
   return (
     <>
       <Header />
-      <main>{props.childrend}</main>;
+      <main>{childrend}</main>;
     </>
   );
 };

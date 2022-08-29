@@ -7,6 +7,11 @@ import Boton from "../ui/Boton";
 
 const Header = () => {
   let usuario = true;
+  function cambio() {
+    console.log(usuario);
+    if (usuario == true) return (usuario = false);
+    usuario = true;
+  }
 
   return (
     <header>
@@ -22,7 +27,7 @@ const Header = () => {
               <p>Hola: Andres</p>
               <button
                 onClick={() => {
-                  usuario = false;
+                  cambio();
                 }}
                 type="button"
               >
